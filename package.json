@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "npm run build --workspaces && changeset publish"
+    "release": "npm run build --workspaces && changeset publish && git push --follow-tags"
   },
   "devDependencies": {
     "@changesets/cli": "^2.30.0",
